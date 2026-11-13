@@ -1,0 +1,38 @@
+\section{Cadre méthodologique}
+\label{sec:methodo}
+
+\subsection{L'urbanisation des systèmes d'information}
+L'urbanisation applique au système d'information les principes d'aménagement d'une ville~: on découpe le territoire en zones, quartiers, îlots et blocs aux responsabilités claires, on fixe des règles de voirie (les échanges) et l'on fait évoluer le bâti progressivement, sans tout raser \cite{longepe2009, club_urba2010}. La démarche s'organise en quatre couches qui se répondent~: la couche \emph{métier} (stratégie, processus, acteurs), la couche \emph{fonctionnelle} (ce que le SI doit savoir faire, indépendamment des logiciels), la couche \emph{applicative} (les logiciels qui portent ces fonctions et leurs flux) et la couche \emph{technique} (les infrastructures d'exécution). L'alignement des quatre couches, de la stratégie vers la technique, constitue le fil conducteur de ce rapport.
+
+Pour chaque couche nous distinguons l'\emph{existant} (\emph{as-is}) et la \emph{cible} (\emph{to-be}), puis nous qualifions chaque bloc selon trois statuts, repris dans toutes les figures~: \tagE~existant conservé, \tagV~existant à faire évoluer, \tagN~nouveau.
+
+\subsection{Standards et notations}
+Nous utilisons trois standards complémentaires. \textbf{ArchiMate 3.2} \cite{archimate32} fournit un langage unique pour relier motivations, stratégie, métier, applications, technologie et trajectoire de migration~; il garantit la cohérence entre nos cartographies et a été outillé avec Archi \cite{archi_tool}. \textbf{BPMN 2.0} \cite{bpmn20} sert à modéliser le processus principal avec ses couloirs d'acteurs, ses passerelles de décision et ses événements~; les modèles ont été construits sous IBM Blueworks Live \cite{blueworks_doc}. Enfin, la méthode \textbf{TOGAF} \cite{togaf10} inspire l'enchaînement vision, architectures, opportunités et solutions, planification de la migration, que nous avons adapté au format demandé.
+
+\subsection{Démarche suivie}
+Le travail s'est déroulé en cinq étapes~:
+\begin{enumerate}
+  \item \emph{Étude de l'existant}~: analyse du parcours proposé par \texttt{cnie.ma}, des portails connexes (\texttt{epolice.ma}, \texttt{identitenumerique.ma}), de la documentation publique de la DGSN et de la presse spécialisée~; reconstitution des cartographies actuelles.
+  \item \emph{Captation de la stratégie}~: entretien simulé avec les décideurs à partir des orientations nationales et des bilans annuels de l'organisation~; formalisation en vue de motivation ArchiMate.
+  \item \emph{Conception de la cible}~: processus cible en BPMN, plan d'occupation des sols fonctionnel, cartographie applicative, architecture technique.
+  \item \emph{Prototypage}~: implémentation du sous-processus SP1 sous Bonita Studio \cite{bonita_doc} (modèle de données, formulaires, règles de décision, simulation du service d'IA).
+  \item \emph{Trajectoire}~: découpage en paliers, chantiers, gouvernance et risques.
+\end{enumerate}
+
+\subsection{Outils}
+\begin{table}[h]
+\caption{Outils mobilisés par livrable}
+\label{tab:outils}
+\centering
+\small
+\begin{tabularx}{\columnwidth}{lX}
+\toprule
+\textbf{Livrable} & \textbf{Outil} \\
+\midrule
+Stratégie, cartographies fonctionnelle, applicative, technique, trajectoire & Archi (ArchiMate 3.2) \\
+Processus métier actuel et cible & IBM Blueworks Live (BPMN 2.0) \\
+Interfaces du sous-processus SP1 & Bonita Studio Community (BPM, BDM, UI Designer) \\
+Rédaction & \LaTeX{} (classe IEEEtran) \\
+\bottomrule
+\end{tabularx}
+\end{table}

@@ -1,0 +1,94 @@
+<mxfile host="gen_archimate.py" type="device">
+<diagram name="V5 - Architecture technique cible" id="d_V5_technique"><mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1654" pageHeight="1169">
+<root><mxCell id="0"/><mxCell id="1" parent="0"/>
+<mxCell id="g0" value="Accès" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="20" width="340" height="113" as="geometry"/></mxCell>
+<mxCell id="g1" value="Zone d'exposition (DMZ)" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="150" width="500" height="113" as="geometry"/></mxCell>
+<mxCell id="g2" value="Zone sécurité" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="540" y="150" width="660" height="113" as="geometry"/></mxCell>
+<mxCell id="g3" value="Zone applicative" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="290" width="820" height="113" as="geometry"/></mxCell>
+<mxCell id="g4" value="Zone IA" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="860" y="290" width="500" height="113" as="geometry"/></mxCell>
+<mxCell id="g5" value="Zone données" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="430" width="660" height="113" as="geometry"/></mxCell>
+<mxCell id="g6" value="Hébergement" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="700" y="430" width="180" height="113" as="geometry"/></mxCell>
+<mxCell id="g7" value="Sites physiques" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="570" width="820" height="113" as="geometry"/></mxCell>
+<mxCell id="n_net_int" value="Internet" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=netw;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="35" y="63" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_net_wan" value="Réseau interministériel sécurisé (VPN)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=netw;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="195" y="63" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_n_dmz" value="Zone d'exposition (DMZ)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=node;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="35" y="193" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_s_waf" value="WAF / anti-DDoS" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=sysSw;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="195" y="193" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_s_apigw" value="API Gateway (Kong)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=sysSw;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="355" y="193" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_n_sec" value="Zone sécurité" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=node;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="555" y="193" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_s_hsm" value="HSM (PKI nationale)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=device;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="715" y="193" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_s_siem" value="SIEM / SOC" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=sysSw;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="875" y="193" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_s_pam" value="Gestion des accès privilégiés" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=sysSw;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="1035" y="193" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_n_app" value="Zone applicative (cluster Kubernetes)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=node;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="35" y="333" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_s_k8s" value="Kubernetes + conteneurs" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=sysSw;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="195" y="333" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_s_bpm" value="Bonita Runtime" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=sysSw;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="355" y="333" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_s_kafka" value="Bus d'événements (Kafka)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=sysSw;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="515" y="333" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_s_iam" value="IAM / OIDC (Keycloak)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=sysSw;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="675" y="333" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_n_ia" value="Zone IA (GPU, inférence)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=node;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="875" y="333" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_s_ml" value="Serveur d'inférence (OCR, vision, LLM)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=sysSw;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="1035" y="333" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_s_mlops" value="MLOps (registre de modèles)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=sysSw;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="1195" y="333" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_n_data" value="Zone données" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=node;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="35" y="473" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_s_pg" value="PostgreSQL (HA)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=sysSw;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="195" y="473" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_s_s3" value="Stockage objet chiffré" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=sysSw;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="355" y="473" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_s_dwh" value="Entrepôt de données" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=sysSw;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="515" y="473" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_ts_cloud" value="Cloud souverain (hébergement DGSSI)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=serv;archiType=rounded;" vertex="1" parent="1">
+<mxGeometry x="715" y="473" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_n_cedi" value="Site CEDI" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=node;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="35" y="613" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_d_poste" value="Poste d'enrôlement (capteurs biométriques, lecteur NFC)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=device;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="195" y="613" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_d_kiosk" value="Borne / kit hors-ligne" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=device;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="355" y="613" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_n_cpc" value="Site de production" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=node;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="515" y="613" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_d_perso" value="Machines de personnalisation (laser, encodage puce)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#C9E7B7;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=device;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="675" y="613" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="e_rel-0229" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=none;" edge="1" parent="1" source="n_net_int" target="n_n_dmz">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0230" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;dashed=1;dashPattern=8 4;" edge="1" parent="1" source="n_n_dmz" target="n_n_app">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0231" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;dashed=1;dashPattern=8 4;" edge="1" parent="1" source="n_n_app" target="n_n_data">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0232" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;dashed=1;dashPattern=8 4;" edge="1" parent="1" source="n_n_app" target="n_n_ia">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0233" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=none;" edge="1" parent="1" source="n_net_wan" target="n_n_cedi">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0234" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=none;" edge="1" parent="1" source="n_net_wan" target="n_n_cpc">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0235" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=none;" edge="1" parent="1" source="n_net_wan" target="n_n_dmz">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0236" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;" edge="1" parent="1" source="n_ts_cloud" target="n_n_app">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0237" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;" edge="1" parent="1" source="n_ts_cloud" target="n_n_data">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0238" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;" edge="1" parent="1" source="n_ts_cloud" target="n_n_ia">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+</root></mxGraphModel></diagram></mxfile>

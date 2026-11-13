@@ -1,0 +1,80 @@
+<mxfile host="gen_bpmn.py" type="device">
+<diagram name="SP1 - Pré-demande en ligne, contrôle IA des pièces et prise de RDV" id="d_SP1_predemande"><mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+<root><mxCell id="0"/><mxCell id="1" parent="0"/>
+<mxCell id="pool" value="DGSN - SP1 Pré-demande CNIE (prototype Bonita)" style="swimlane;horizontal=0;html=1;startSize=36;fontStyle=1;fontSize=12;fillColor=#1f3b57;fontColor=#ffffff;strokeColor=#1f3b57;" vertex="1" parent="1">
+<mxGeometry x="20" y="20" width="2427" height="540" as="geometry"/></mxCell>
+<mxCell id="lane0" value="Citoyen" style="swimlane;horizontal=0;html=1;startSize=36;fontSize=10;fontStyle=1;fillColor=#f8f9fb;strokeColor=#6b7a8f;swimlaneFillColor=#f8f9fb;" vertex="1" parent="pool">
+<mxGeometry x="36" y="0" width="2391" height="180" as="geometry"/></mxCell>
+<mxCell id="lane1" value="Services automatiques" style="swimlane;horizontal=0;html=1;startSize=36;fontSize=10;fontStyle=1;fillColor=#eef3fa;strokeColor=#6b7a8f;swimlaneFillColor=#eef3fa;" vertex="1" parent="pool">
+<mxGeometry x="36" y="180" width="2391" height="180" as="geometry"/></mxCell>
+<mxCell id="lane2" value="Agent instructeur" style="swimlane;horizontal=0;html=1;startSize=36;fontSize=10;fontStyle=1;fillColor=#f8f9fb;strokeColor=#6b7a8f;swimlaneFillColor=#f8f9fb;" vertex="1" parent="pool">
+<mxGeometry x="36" y="360" width="2391" height="180" as="geometry"/></mxCell>
+<mxCell id="s1" value="Nouvelle demande" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2e7d32;strokeWidth=2;fontSize=9;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="lane0">
+<mxGeometry x="123" y="72" width="36" height="36" as="geometry"/></mxCell>
+<mxCell id="t1" value="Saisir la pré-demande (type, identité, état civil, adresse, contact)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="lane0">
+<mxGeometry x="251" y="55" width="130" height="70" as="geometry"/></mxCell>
+<mxCell id="t2" value="Téléverser les pièces (acte, résidence, photo)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="lane0">
+<mxGeometry x="426" y="55" width="130" height="70" as="geometry"/></mxCell>
+<mxCell id="t3" value="[IA] Contrôle IA des pièces (OCR + cohérence + photo)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;" vertex="1" parent="lane1">
+<mxGeometry x="601" y="55" width="130" height="70" as="geometry"/></mxCell>
+<mxCell id="g1" value="&lt;b&gt;X&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="lane1">
+<mxGeometry x="816" y="65" width="50" height="50" as="geometry"/></mxCell>
+<mxCell id="g1_lbl" value="Score de conformité ?" style="text;html=1;align=center;verticalAlign=top;fontSize=9;fontStyle=2;" vertex="1" parent="lane1">
+<mxGeometry x="776" y="117" width="130" height="24" as="geometry"/></mxCell>
+<mxCell id="t4" value="Corriger les anomalies signalées" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="lane0">
+<mxGeometry x="951" y="55" width="130" height="70" as="geometry"/></mxCell>
+<mxCell id="t5" value="Instruire manuellement le dossier" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="lane2">
+<mxGeometry x="951" y="55" width="130" height="70" as="geometry"/></mxCell>
+<mxCell id="g2" value="&lt;b&gt;X&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="lane2">
+<mxGeometry x="1166" y="65" width="50" height="50" as="geometry"/></mxCell>
+<mxCell id="g2_lbl" value="Décision ?" style="text;html=1;align=center;verticalAlign=top;fontSize=9;fontStyle=2;" vertex="1" parent="lane2">
+<mxGeometry x="1126" y="117" width="130" height="24" as="geometry"/></mxCell>
+<mxCell id="e2" value="Demande rejetée" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c62828;strokeWidth=4;fontSize=9;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="lane2">
+<mxGeometry x="1348" y="72" width="36" height="36" as="geometry"/></mxCell>
+<mxCell id="t6" value="Choisir le centre et le créneau recommandé" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="lane0">
+<mxGeometry x="1301" y="55" width="130" height="70" as="geometry"/></mxCell>
+<mxCell id="t7" value="Régler les frais (code e-timbre)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="lane0">
+<mxGeometry x="1476" y="55" width="130" height="70" as="geometry"/></mxCell>
+<mxCell id="t8" value="Vérifier l'e-timbre et réserver le créneau" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="lane1">
+<mxGeometry x="1651" y="55" width="130" height="70" as="geometry"/></mxCell>
+<mxCell id="t9" value="Générer le récépissé, le QR code et notifier" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="lane1">
+<mxGeometry x="1826" y="55" width="130" height="70" as="geometry"/></mxCell>
+<mxCell id="t10" value="Consulter la confirmation et le récépissé" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="lane0">
+<mxGeometry x="2001" y="55" width="130" height="70" as="geometry"/></mxCell>
+<mxCell id="e1" value="Pré-demande confirmée" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c62828;strokeWidth=4;fontSize=9;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="lane0">
+<mxGeometry x="2223" y="72" width="36" height="36" as="geometry"/></mxCell>
+<mxCell id="flow_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="s1" target="t1">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="t1" target="t2">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="t2" target="t3">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="t3" target="g1">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_5" value="&lt; 60 % : non conforme" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="g1" target="t4">
+<mxGeometry x="0.55" relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="t4" target="t3">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_7" value="60-85 % : doute" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="g1" target="t5">
+<mxGeometry x="0.55" relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="t5" target="g2">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_9" value="à corriger" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="g2" target="t4">
+<mxGeometry x="0.55" relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_10" value="rejet" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="g2" target="e2">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_11" value="validé" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="g2" target="t6">
+<mxGeometry x="0.55" relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_12" value="&gt; 85 % : conforme" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="g1" target="t6">
+<mxGeometry x="0.55" relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="t6" target="t7">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="t7" target="t8">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="t8" target="t9">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="t9" target="t10">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="flow_17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#1f3b57;" edge="1" parent="1" source="t10" target="e1">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+</root></mxGraphModel></diagram></mxfile>

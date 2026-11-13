@@ -1,0 +1,1108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com" name="Urbanisation SI CNIE - DGSN (cible 2030)" id="model-0262" version="5.0.0">
+  <folder name="Strategy" id="folder-0263" type="strategy">
+    <element xsi:type="archimate:Capability" name="Gestion des demandes de titre" id="el-0027">
+    </element>
+    <element xsi:type="archimate:Capability" name="Enrôlement biométrique" id="el-0028">
+    </element>
+    <element xsi:type="archimate:Capability" name="Identité numérique et authentification" id="el-0029">
+    </element>
+    <element xsi:type="archimate:Capability" name="Contrôle documentaire par IA" id="el-0030">
+    </element>
+    <element xsi:type="archimate:Capability" name="Pilotage prédictif et gestion de la capacité" id="el-0031">
+    </element>
+    <element xsi:type="archimate:CourseOfAction" name="Programme « CNIE numérique 2030 »" id="el-0032">
+    </element>
+  </folder>
+  <folder name="Business" id="folder-0264" type="business">
+    <element xsi:type="archimate:BusinessActor" name="Citoyen" id="el-0067">
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Agent CEDI" id="el-0068">
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Agent instructeur" id="el-0069">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Centre de production (CPC)" id="el-0070">
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Partenaires (Trésorerie, Poste, état civil, consulats)" id="el-0071">
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Demande et renouvellement de CNIE" id="el-0072">
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Prise de rendez-vous" id="el-0073">
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Suivi de la demande" id="el-0074">
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Identité numérique (TCN)" id="el-0075">
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Authentification pour les fournisseurs accrédités" id="el-0076">
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="P0 - Demande et renouvellement de la CNIE" id="el-0077">
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="SP1 - Pré-demande, contrôle IA des pièces, RDV" id="el-0078">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="SP2 - Enrôlement au CEDI" id="el-0079">
+      <property key="Statut" value="A faire évoluer"/>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="SP3 - Production et personnalisation" id="el-0080">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="SP4 - Notification, remise, activation e-ID" id="el-0081">
+      <property key="Statut" value="A faire évoluer"/>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Demande" id="el-0082">
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Dossier de pièces" id="el-0083">
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Rendez-vous" id="el-0084">
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Carte CNIE" id="el-0085">
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Identité numérique" id="el-0086">
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Portail citoyen web (AR/FR/AMZ)" id="el-0110">
+      <property key="Statut" value="A faire évoluer"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Application mobile Mon e-ID" id="el-0111">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Assistant conversationnel IA" id="el-0112">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Guichet CEDI et kits hors-ligne" id="el-0113">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Notifications multicanal" id="el-0114">
+      <property key="Statut" value="A faire évoluer"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Portail partenaires TCN" id="el-0115">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Gestion des pré-demandes" id="el-0116">
+      <property key="Statut" value="A faire évoluer"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Gestion des pièces et contrôle IA" id="el-0117">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Gestion des RDV et créneaux" id="el-0118">
+      <property key="Statut" value="A faire évoluer"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Enrôlement biométrique" id="el-0119">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Instruction des dossiers" id="el-0120">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Production et personnalisation" id="el-0121">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Remise et activation" id="el-0122">
+      <property key="Statut" value="A faire évoluer"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Gestion des cas particuliers" id="el-0123">
+      <property key="Statut" value="A faire évoluer"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Cycle de vie de la carte (révocation, PIN)" id="el-0124">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Paiement et e-timbre" id="el-0125">
+      <property key="Statut" value="A faire évoluer"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Référentiel biométrique (ABIS/AFIS)" id="el-0126">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Identité numérique (TCN)" id="el-0127">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Gestion documentaire et archivage" id="el-0128">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Réclamations (GRC)" id="el-0129">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Tableaux de bord et BI" id="el-0130">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Prévision d'affluence" id="el-0131">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Détection d'anomalies et fraude" id="el-0132">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Gouvernance des modèles (MLOps)" id="el-0133">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="RH des agents" id="el-0134">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Logistique des centres" id="el-0135">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Consommables (cartes vierges)" id="el-0136">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="État civil (RNEC)" id="el-0137">
+      <property key="Statut" value="A faire évoluer"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="RNP / RSU" id="el-0138">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Base des cartes révoquées" id="el-0139">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Annuaire des centres" id="el-0140">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Interopérabilité (API Gateway)" id="el-0141">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+  </folder>
+  <folder name="Application" id="folder-0265" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="APP-01 Portail citoyen CNIE" id="el-0142">
+      <property key="Statut" value="A faire évoluer"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="APP-02 App mobile Mon e-ID" id="el-0143">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="APP-03 Assistant conversationnel" id="el-0144">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="APP-04 Moteur BPM (Bonita)" id="el-0145">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="APP-05 Contrôle documentaire IA" id="el-0146">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="APP-06 Rendez-vous et prévision" id="el-0147">
+      <property key="Statut" value="A faire évoluer"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="APP-07 Poste d'enrôlement CEDI" id="el-0148">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="APP-08 ABIS / AFIS" id="el-0149">
+      <property key="Statut" value="A faire évoluer"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="APP-09 Production et personnalisation" id="el-0150">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="APP-10 Plateforme TCN (OpenID Connect)" id="el-0151">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="APP-11 API Gateway et bus d'intégration" id="el-0152">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="APP-12 Notifications multicanal" id="el-0153">
+      <property key="Statut" value="A faire évoluer"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="APP-13 Entrepôt de données, BI et MLOps" id="el-0154">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="APP-14 GRC / réclamations" id="el-0155">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="APP-15 GED et archivage probant" id="el-0156">
+      <property key="Statut" value="Nouveau"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="SI État civil" id="el-0157">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="e-Timbre (Trésorerie)" id="el-0158">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Barid Al-Maghrib" id="el-0159">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="SI consulaire" id="el-0160">
+      <property key="Statut" value="Existant"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Fournisseurs accrédités" id="el-0161">
+      <property key="Statut" value="Existant"/>
+    </element>
+  </folder>
+  <folder name="Technology &amp; Physical" id="folder-0266" type="technology">
+    <element xsi:type="archimate:Node" name="Zone d'exposition (DMZ)" id="el-0185">
+    </element>
+    <element xsi:type="archimate:Node" name="Zone applicative (cluster Kubernetes)" id="el-0186">
+    </element>
+    <element xsi:type="archimate:Node" name="Zone données" id="el-0187">
+    </element>
+    <element xsi:type="archimate:Node" name="Zone IA (GPU, inférence)" id="el-0188">
+    </element>
+    <element xsi:type="archimate:Node" name="Zone sécurité" id="el-0189">
+    </element>
+    <element xsi:type="archimate:Node" name="Site CEDI" id="el-0190">
+    </element>
+    <element xsi:type="archimate:Node" name="Site de production" id="el-0191">
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="WAF / anti-DDoS" id="el-0192">
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="API Gateway (Kong)" id="el-0193">
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="IAM / OIDC (Keycloak)" id="el-0194">
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="Kubernetes + conteneurs" id="el-0195">
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="Bonita Runtime" id="el-0196">
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="Bus d'événements (Kafka)" id="el-0197">
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="PostgreSQL (HA)" id="el-0198">
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="Stockage objet chiffré" id="el-0199">
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="Entrepôt de données" id="el-0200">
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="Serveur d'inférence (OCR, vision, LLM)" id="el-0201">
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="MLOps (registre de modèles)" id="el-0202">
+    </element>
+    <element xsi:type="archimate:Device" name="HSM (PKI nationale)" id="el-0203">
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="SIEM / SOC" id="el-0204">
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="Gestion des accès privilégiés" id="el-0205">
+    </element>
+    <element xsi:type="archimate:Device" name="Poste d'enrôlement (capteurs biométriques, lecteur NFC)" id="el-0206">
+    </element>
+    <element xsi:type="archimate:Device" name="Borne / kit hors-ligne" id="el-0207">
+    </element>
+    <element xsi:type="archimate:Device" name="Machines de personnalisation (laser, encodage puce)" id="el-0208">
+    </element>
+    <element xsi:type="archimate:CommunicationNetwork" name="Réseau interministériel sécurisé (VPN)" id="el-0209">
+    </element>
+    <element xsi:type="archimate:CommunicationNetwork" name="Internet" id="el-0210">
+    </element>
+    <element xsi:type="archimate:TechnologyService" name="Cloud souverain (hébergement DGSSI)" id="el-0211">
+    </element>
+  </folder>
+  <folder name="Motivation" id="folder-0267" type="motivation">
+    <element xsi:type="archimate:Stakeholder" name="Citoyens et MRE" id="el-0001">
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="DGSN / Ministère de l'Intérieur" id="el-0002">
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="ADD / DGTN" id="el-0003">
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="CNDP / DGSSI" id="el-0004">
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Fournisseurs de services accrédités" id="el-0005">
+    </element>
+    <element xsi:type="archimate:Driver" name="Digital Morocco 2030 (EGDI 113e → 50e)" id="el-0006">
+    </element>
+    <element xsi:type="archimate:Driver" name="Loi 55-19 : simplification et numérisation" id="el-0007">
+    </element>
+    <element xsi:type="archimate:Driver" name="Lutte contre la fraude et l'usurpation" id="el-0008">
+    </element>
+    <element xsi:type="archimate:Driver" name="Qualité de service : attente, délais, saturation" id="el-0009">
+    </element>
+    <element xsi:type="archimate:Driver" name="Inclusion numérique (ruraux, seniors, MRE)" id="el-0010">
+    </element>
+    <element xsi:type="archimate:Assessment" name="Canaux en silos (cnie.ma, epolice.ma, identitenumerique.ma)" id="el-0011">
+    </element>
+    <element xsi:type="archimate:Assessment" name="Contrôle des pièces manuel et tardif" id="el-0012">
+    </element>
+    <element xsi:type="archimate:Assessment" name="Créneaux saturés, intermédiaires frauduleux" id="el-0013">
+    </element>
+    <element xsi:type="archimate:Goal" name="G1 - Démarche CNIE 100 % en ligne jusqu'à la biométrie" id="el-0014">
+    </element>
+    <element xsi:type="archimate:Goal" name="G2 - Diviser par 2 le délai et l'attente en centre" id="el-0015">
+    </element>
+    <element xsi:type="archimate:Goal" name="G3 - Unicité garantie, zéro fraude à l'enrôlement" id="el-0016">
+    </element>
+    <element xsi:type="archimate:Goal" name="G4 - Identité numérique activée pour chaque carte" id="el-0017">
+    </element>
+    <element xsi:type="archimate:Goal" name="G5 - Pilotage par la donnée et l'IA" id="el-0018">
+    </element>
+    <element xsi:type="archimate:Outcome" name="Dossiers incomplets au CEDI &lt; 5 %" id="el-0019">
+    </element>
+    <element xsi:type="archimate:Outcome" name="Temps moyen en centre &lt; 15 min" id="el-0020">
+    </element>
+    <element xsi:type="archimate:Outcome" name="Taux d'activation Mon e-ID &gt; 80 %" id="el-0021">
+    </element>
+    <element xsi:type="archimate:Principle" name="Dites-le nous une fois" id="el-0022">
+    </element>
+    <element xsi:type="archimate:Principle" name="Protection des données dès la conception (CNDP)" id="el-0023">
+    </element>
+    <element xsi:type="archimate:Principle" name="Souveraineté et sécurité (DGSSI)" id="el-0024">
+    </element>
+    <element xsi:type="archimate:Principle" name="Interopérabilité et API d'abord" id="el-0025">
+    </element>
+    <element xsi:type="archimate:Principle" name="Multicanal inclusif" id="el-0026">
+    </element>
+  </folder>
+  <folder name="Implementation &amp; Migration" id="folder-0268" type="implementation_migration">
+    <element xsi:type="archimate:Plateau" name="Palier 0 - Existant (2026)" id="el-0239">
+    </element>
+    <element xsi:type="archimate:Plateau" name="Palier 1 - Socle (2027) : BPM, API Gateway, contrôle IA des pièces, e-timbre intégré" id="el-0240">
+    </element>
+    <element xsi:type="archimate:Plateau" name="Palier 2 - Étendu (2028) : app Mon e-ID, assistant IA, prévision d'affluence, livraison à domicile" id="el-0241">
+    </element>
+    <element xsi:type="archimate:Plateau" name="Palier 3 - Cible (2030) : renouvellement 100 % en ligne, pilotage prédictif, MLOps" id="el-0242">
+    </element>
+    <element xsi:type="archimate:WorkPackage" name="WP1 - Socle d'intégration et BPM" id="el-0243">
+    </element>
+    <element xsi:type="archimate:WorkPackage" name="WP2 - Services IA documentaires et biométriques" id="el-0244">
+    </element>
+    <element xsi:type="archimate:WorkPackage" name="WP3 - Canaux citoyens (portail, mobile, assistant)" id="el-0245">
+    </element>
+    <element xsi:type="archimate:WorkPackage" name="WP4 - Données, BI et MLOps" id="el-0246">
+    </element>
+    <element xsi:type="archimate:WorkPackage" name="WP5 - Conduite du changement et gouvernance" id="el-0247">
+    </element>
+    <element xsi:type="archimate:Gap" name="Contrôle documentaire manuel" id="el-0248">
+    </element>
+    <element xsi:type="archimate:Gap" name="Canaux en silos" id="el-0249">
+    </element>
+    <element xsi:type="archimate:Gap" name="Absence de pilotage prédictif" id="el-0250">
+    </element>
+  </folder>
+  <folder name="Other" id="folder-0269" type="other">
+  </folder>
+  <folder name="Relations" id="folder-0270" type="relations">
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0033" source="el-0001" target="el-0009"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0034" source="el-0002" target="el-0008"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0035" source="el-0003" target="el-0006"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0036" source="el-0004" target="el-0008"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0037" source="el-0005" target="el-0006"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0038" source="el-0001" target="el-0010"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-0039" name="+" source="el-0006" target="el-0014"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-0040" name="+" source="el-0007" target="el-0014"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-0041" name="+" source="el-0009" target="el-0015"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-0042" name="+" source="el-0008" target="el-0016"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-0043" name="+" source="el-0006" target="el-0017"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-0044" name="+" source="el-0009" target="el-0018"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-0045" name="+" source="el-0010" target="el-0015"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-0046" name="-" source="el-0011" target="el-0014"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-0047" name="-" source="el-0012" target="el-0015"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-0048" name="-" source="el-0013" target="el-0015"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0049" source="el-0019" target="el-0015"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0050" source="el-0020" target="el-0015"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0051" source="el-0021" target="el-0017"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-0052" source="el-0022" target="el-0014"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-0053" source="el-0023" target="el-0016"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-0054" source="el-0024" target="el-0016"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-0055" source="el-0025" target="el-0014"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-0056" source="el-0026" target="el-0015"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0057" source="el-0027" target="el-0014"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0058" source="el-0028" target="el-0016"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0059" source="el-0029" target="el-0017"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0060" source="el-0030" target="el-0015"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0061" source="el-0031" target="el-0018"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0062" source="el-0032" target="el-0027"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0063" source="el-0032" target="el-0028"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0064" source="el-0032" target="el-0029"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0065" source="el-0032" target="el-0030"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0066" source="el-0032" target="el-0031"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel-0087" source="el-0077" target="el-0078"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel-0088" source="el-0077" target="el-0079"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel-0089" source="el-0077" target="el-0080"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel-0090" source="el-0077" target="el-0081"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel-0091" source="el-0078" target="el-0079"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel-0092" source="el-0079" target="el-0080"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel-0093" source="el-0080" target="el-0081"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0094" source="el-0077" target="el-0072"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0095" source="el-0078" target="el-0073"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0096" source="el-0081" target="el-0074"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0097" source="el-0081" target="el-0075"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0098" source="el-0067" target="el-0078"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0099" source="el-0068" target="el-0079"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0100" source="el-0069" target="el-0078"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0101" source="el-0070" target="el-0080"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0102" source="el-0071" target="el-0081"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-0103" source="el-0078" target="el-0082"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-0104" source="el-0078" target="el-0083"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-0105" source="el-0078" target="el-0084"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-0106" source="el-0080" target="el-0085"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-0107" source="el-0081" target="el-0086"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0108" source="el-0077" target="el-0027"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-0109" source="el-0079" target="el-0028"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0162" name="demande" source="el-0142" target="el-0145"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0163" name="demande" source="el-0143" target="el-0145"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0164" name="assistance" source="el-0144" target="el-0142"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0165" name="pièces" source="el-0145" target="el-0146"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0166" name="score" source="el-0146" target="el-0145"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0167" name="créneau" source="el-0145" target="el-0147"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0168" name="historique" source="el-0147" target="el-0154"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0169" name="paiement" source="el-0145" target="el-0152"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0170" name="e-timbre" source="el-0152" target="el-0158"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0171" name="acte" source="el-0152" target="el-0157"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0172" name="convocation QR" source="el-0145" target="el-0148"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0173" name="biométrie" source="el-0148" target="el-0149"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0174" name="dossier validé" source="el-0149" target="el-0150"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0175" name="statut" source="el-0150" target="el-0145"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0176" name="événements" source="el-0145" target="el-0153"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0177" name="archivage" source="el-0150" target="el-0156"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0178" name="livraison" source="el-0152" target="el-0159"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0179" name="MRE" source="el-0152" target="el-0160"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0180" name="authentification" source="el-0151" target="el-0142"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0181" name="authentification" source="el-0151" target="el-0143"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0182" name="OIDC" source="el-0161" target="el-0151"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0183" name="journal" source="el-0145" target="el-0154"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0184" name="réclamation" source="el-0155" target="el-0145"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0212" source="el-0185" target="el-0192"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0213" source="el-0185" target="el-0193"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0214" source="el-0186" target="el-0195"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0215" source="el-0186" target="el-0196"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0216" source="el-0186" target="el-0197"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0217" source="el-0186" target="el-0194"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0218" source="el-0187" target="el-0198"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0219" source="el-0187" target="el-0199"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0220" source="el-0187" target="el-0200"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0221" source="el-0188" target="el-0201"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0222" source="el-0188" target="el-0202"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0223" source="el-0189" target="el-0203"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0224" source="el-0189" target="el-0204"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-0225" source="el-0189" target="el-0205"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel-0226" source="el-0190" target="el-0206"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel-0227" source="el-0190" target="el-0207"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel-0228" source="el-0191" target="el-0208"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0229" source="el-0210" target="el-0185"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0230" source="el-0185" target="el-0186"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0231" source="el-0186" target="el-0187"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel-0232" source="el-0186" target="el-0188"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0233" source="el-0209" target="el-0190"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0234" source="el-0209" target="el-0191"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0235" source="el-0209" target="el-0185"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-0236" source="el-0211" target="el-0186"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-0237" source="el-0211" target="el-0187"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-0238" source="el-0211" target="el-0188"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel-0251" source="el-0239" target="el-0240"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel-0252" source="el-0240" target="el-0241"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel-0253" source="el-0241" target="el-0242"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0254" source="el-0243" target="el-0240"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0255" source="el-0244" target="el-0240"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0256" source="el-0245" target="el-0241"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0257" source="el-0246" target="el-0242"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0258" source="el-0247" target="el-0242"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0259" source="el-0248" target="el-0239"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0260" source="el-0249" target="el-0239"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-0261" source="el-0250" target="el-0239"/>
+  </folder>
+  <folder name="Views" id="folder-0271" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="V1 - Captation de la stratégie (motivation et capacités)" id="view-0272">
+      <child xsi:type="archimate:Group" id="grp-0327" name="Parties prenantes" fillColor="#f4f4f4">
+        <bounds x="20" y="20" width="820" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0273" archimateElement="el-0001">
+          <bounds x="15" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0305" source="obj-0273" target="obj-0281" archimateRelationship="rel-0033"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0310" source="obj-0273" target="obj-0282" archimateRelationship="rel-0038"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0274" archimateElement="el-0002">
+          <bounds x="175" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0306" source="obj-0274" target="obj-0280" archimateRelationship="rel-0034"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0275" archimateElement="el-0003">
+          <bounds x="335" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0307" source="obj-0275" target="obj-0278" archimateRelationship="rel-0035"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0276" archimateElement="el-0004">
+          <bounds x="495" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0308" source="obj-0276" target="obj-0280" archimateRelationship="rel-0036"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0277" archimateElement="el-0005">
+          <bounds x="655" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0309" source="obj-0277" target="obj-0278" archimateRelationship="rel-0037"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0328" name="Moteurs (drivers) et constats" fillColor="#f4f4f4">
+        <bounds x="20" y="150" width="820" height="178"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0278" archimateElement="el-0006" targetConnections="conn-0307 conn-0309">
+          <bounds x="15" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0311" source="obj-0278" target="obj-0286" archimateRelationship="rel-0039"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0315" source="obj-0278" target="obj-0289" archimateRelationship="rel-0043"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0279" archimateElement="el-0007">
+          <bounds x="175" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0312" source="obj-0279" target="obj-0286" archimateRelationship="rel-0040"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0280" archimateElement="el-0008" targetConnections="conn-0306 conn-0308">
+          <bounds x="335" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0314" source="obj-0280" target="obj-0288" archimateRelationship="rel-0042"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0281" archimateElement="el-0009" targetConnections="conn-0305">
+          <bounds x="495" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0313" source="obj-0281" target="obj-0287" archimateRelationship="rel-0041"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0316" source="obj-0281" target="obj-0290" archimateRelationship="rel-0044"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0282" archimateElement="el-0010" targetConnections="conn-0310">
+          <bounds x="655" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0317" source="obj-0282" target="obj-0287" archimateRelationship="rel-0045"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0283" archimateElement="el-0011">
+          <bounds x="15" y="108" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0318" source="obj-0283" target="obj-0286" archimateRelationship="rel-0046"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0284" archimateElement="el-0012">
+          <bounds x="175" y="108" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0319" source="obj-0284" target="obj-0287" archimateRelationship="rel-0047"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0285" archimateElement="el-0013">
+          <bounds x="335" y="108" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0320" source="obj-0285" target="obj-0287" archimateRelationship="rel-0048"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0329" name="Objectifs stratégiques" fillColor="#f4f4f4">
+        <bounds x="20" y="345" width="820" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0286" archimateElement="el-0014" targetConnections="conn-0311 conn-0312 conn-0318 conn-0321">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0287" archimateElement="el-0015" targetConnections="conn-0313 conn-0317 conn-0319 conn-0320 conn-0324">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0288" archimateElement="el-0016" targetConnections="conn-0314 conn-0322">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0289" archimateElement="el-0017" targetConnections="conn-0315 conn-0323">
+          <bounds x="495" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0290" archimateElement="el-0018" targetConnections="conn-0316 conn-0325">
+          <bounds x="655" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0330" name="Capacités cibles (réalisent les objectifs)" fillColor="#f4f4f4">
+        <bounds x="20" y="475" width="820" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0291" archimateElement="el-0027">
+          <bounds x="15" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0321" source="obj-0291" target="obj-0286" archimateRelationship="rel-0057"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0292" archimateElement="el-0030">
+          <bounds x="175" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0324" source="obj-0292" target="obj-0287" archimateRelationship="rel-0060"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0293" archimateElement="el-0028">
+          <bounds x="335" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0322" source="obj-0293" target="obj-0288" archimateRelationship="rel-0058"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0294" archimateElement="el-0029">
+          <bounds x="495" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0323" source="obj-0294" target="obj-0289" archimateRelationship="rel-0059"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0295" archimateElement="el-0031" targetConnections="conn-0326">
+          <bounds x="655" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0325" source="obj-0295" target="obj-0290" archimateRelationship="rel-0061"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0331" name="Programme" fillColor="#f4f4f4">
+        <bounds x="850" y="475" width="180" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0296" archimateElement="el-0032">
+          <bounds x="15" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0326" source="obj-0296" target="obj-0295" archimateRelationship="rel-0066"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0332" name="Résultats attendus (indicateurs)" fillColor="#f4f4f4">
+        <bounds x="20" y="605" width="500" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0297" archimateElement="el-0019">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0298" archimateElement="el-0020">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0299" archimateElement="el-0021">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0333" name="Principes d'urbanisation" fillColor="#f4f4f4">
+        <bounds x="20" y="735" width="820" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0300" archimateElement="el-0022">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0301" archimateElement="el-0023">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0302" archimateElement="el-0024">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0303" archimateElement="el-0025">
+          <bounds x="495" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0304" archimateElement="el-0026">
+          <bounds x="655" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="note-0334" textAlignment="1">
+        <bounds x="20" y="-70" width="760" height="55"/>
+        <content>Flèches pleines : association · pointillés « + / - » : influence · pointillés à triangle : réalisation. Les résultats attendus mesurent G2 (o1, o2) et G4 (o3).</content>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="V2 - Cartographie métier cible (processus et services)" id="view-0335">
+      <child xsi:type="archimate:Group" id="grp-0377" name="Services métier offerts" fillColor="#f4f4f4">
+        <bounds x="20" y="20" width="820" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0336" archimateElement="el-0072" targetConnections="conn-0363">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0337" archimateElement="el-0073" targetConnections="conn-0364">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0338" archimateElement="el-0074" targetConnections="conn-0365">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0339" archimateElement="el-0075" targetConnections="conn-0366">
+          <bounds x="495" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0340" archimateElement="el-0076">
+          <bounds x="655" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0378" name="Acteurs" fillColor="#f4f4f4">
+        <bounds x="20" y="150" width="820" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0341" archimateElement="el-0067">
+          <bounds x="15" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0367" source="obj-0341" target="obj-0347" archimateRelationship="rel-0098"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0342" archimateElement="el-0068">
+          <bounds x="175" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0368" source="obj-0342" target="obj-0348" archimateRelationship="rel-0099"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0343" archimateElement="el-0069" fillColor="#B9F0B9">
+          <bounds x="335" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0369" source="obj-0343" target="obj-0347" archimateRelationship="rel-0100"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0344" archimateElement="el-0070">
+          <bounds x="495" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0370" source="obj-0344" target="obj-0349" archimateRelationship="rel-0101"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0345" archimateElement="el-0071">
+          <bounds x="655" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0371" source="obj-0345" target="obj-0350" archimateRelationship="rel-0102"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0379" name="Processus principal et sous-processus" fillColor="#f4f4f4">
+        <bounds x="20" y="280" width="820" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0346" archimateElement="el-0077">
+          <bounds x="15" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0356" source="obj-0346" target="obj-0347" archimateRelationship="rel-0087"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0357" source="obj-0346" target="obj-0348" archimateRelationship="rel-0088"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0358" source="obj-0346" target="obj-0349" archimateRelationship="rel-0089"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0359" source="obj-0346" target="obj-0350" archimateRelationship="rel-0090"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0363" source="obj-0346" target="obj-0336" archimateRelationship="rel-0094"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0347" archimateElement="el-0078" fillColor="#B9F0B9" targetConnections="conn-0356 conn-0367 conn-0369">
+          <bounds x="175" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0360" source="obj-0347" target="obj-0348" archimateRelationship="rel-0091"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0364" source="obj-0347" target="obj-0337" archimateRelationship="rel-0095"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0372" source="obj-0347" target="obj-0351" archimateRelationship="rel-0103"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0373" source="obj-0347" target="obj-0352" archimateRelationship="rel-0104"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0374" source="obj-0347" target="obj-0353" archimateRelationship="rel-0105"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0348" archimateElement="el-0079" fillColor="#FFD38A" targetConnections="conn-0357 conn-0360 conn-0368">
+          <bounds x="335" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0361" source="obj-0348" target="obj-0349" archimateRelationship="rel-0092"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0349" archimateElement="el-0080" fillColor="#FFFFB5" targetConnections="conn-0358 conn-0361 conn-0370">
+          <bounds x="495" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0362" source="obj-0349" target="obj-0350" archimateRelationship="rel-0093"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0375" source="obj-0349" target="obj-0354" archimateRelationship="rel-0106"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0350" archimateElement="el-0081" fillColor="#FFD38A" targetConnections="conn-0359 conn-0362 conn-0371">
+          <bounds x="655" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0365" source="obj-0350" target="obj-0338" archimateRelationship="rel-0096"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0366" source="obj-0350" target="obj-0339" archimateRelationship="rel-0097"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0376" source="obj-0350" target="obj-0355" archimateRelationship="rel-0107"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0380" name="Objets métier" fillColor="#f4f4f4">
+        <bounds x="20" y="410" width="820" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0351" archimateElement="el-0082" targetConnections="conn-0372">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0352" archimateElement="el-0083" targetConnections="conn-0373">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0353" archimateElement="el-0084" targetConnections="conn-0374">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0354" archimateElement="el-0085" targetConnections="conn-0375">
+          <bounds x="495" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0355" archimateElement="el-0086" targetConnections="conn-0376">
+          <bounds x="655" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="note-0381" textAlignment="1">
+        <bounds x="20" y="-70" width="760" height="55"/>
+        <content>Couleurs : jaune = existant, orange = à faire évoluer, vert = nouveau.</content>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="V3 - Cartographie fonctionnelle cible (plan d'occupation des sols)" id="view-0382">
+      <child xsi:type="archimate:Group" id="grp-0415" name="Zone Échange (canaux)" fillColor="#f4f4f4">
+        <bounds x="20" y="20" width="980" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0383" archimateElement="el-0110" fillColor="#FFD38A">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0384" archimateElement="el-0111" fillColor="#B9F0B9">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0385" archimateElement="el-0112" fillColor="#B9F0B9">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0386" archimateElement="el-0113" fillColor="#FFFFB5">
+          <bounds x="495" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0387" archimateElement="el-0114" fillColor="#FFD38A">
+          <bounds x="655" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0388" archimateElement="el-0115" fillColor="#FFFFB5">
+          <bounds x="815" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0416" name="Zone Opérationnelle (cœur métier CNIE)" fillColor="#f4f4f4">
+        <bounds x="20" y="150" width="820" height="178"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0389" archimateElement="el-0116" fillColor="#FFD38A">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0390" archimateElement="el-0117" fillColor="#B9F0B9">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0391" archimateElement="el-0118" fillColor="#FFD38A">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0392" archimateElement="el-0119" fillColor="#FFFFB5">
+          <bounds x="495" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0393" archimateElement="el-0120" fillColor="#B9F0B9">
+          <bounds x="655" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0394" archimateElement="el-0121" fillColor="#FFFFB5">
+          <bounds x="15" y="108" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0395" archimateElement="el-0122" fillColor="#FFD38A">
+          <bounds x="175" y="108" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0396" archimateElement="el-0123" fillColor="#FFD38A">
+          <bounds x="335" y="108" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0397" archimateElement="el-0124" fillColor="#FFFFB5">
+          <bounds x="495" y="108" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0417" name="Zone Pilotage et IA" fillColor="#f4f4f4">
+        <bounds x="850" y="150" width="340" height="178"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0398" archimateElement="el-0130" fillColor="#B9F0B9">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0399" archimateElement="el-0131" fillColor="#B9F0B9">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0400" archimateElement="el-0132" fillColor="#B9F0B9">
+          <bounds x="15" y="108" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0401" archimateElement="el-0133" fillColor="#B9F0B9">
+          <bounds x="175" y="108" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0418" name="Zone Support" fillColor="#f4f4f4">
+        <bounds x="20" y="345" width="820" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0402" archimateElement="el-0125" fillColor="#FFD38A">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0403" archimateElement="el-0126" fillColor="#FFFFB5">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0404" archimateElement="el-0127" fillColor="#FFFFB5">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0405" archimateElement="el-0128" fillColor="#B9F0B9">
+          <bounds x="495" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0406" archimateElement="el-0129" fillColor="#B9F0B9">
+          <bounds x="655" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0419" name="Zone Ressources" fillColor="#f4f4f4">
+        <bounds x="850" y="345" width="340" height="178"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0407" archimateElement="el-0134" fillColor="#FFFFB5">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0408" archimateElement="el-0135" fillColor="#FFFFB5">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0409" archimateElement="el-0136" fillColor="#FFFFB5">
+          <bounds x="15" y="108" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0420" name="Zone Référentiels et échanges" fillColor="#f4f4f4">
+        <bounds x="20" y="475" width="820" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0410" archimateElement="el-0137" fillColor="#FFD38A">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0411" archimateElement="el-0138" fillColor="#B9F0B9">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0412" archimateElement="el-0139" fillColor="#FFFFB5">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0413" archimateElement="el-0140" fillColor="#FFFFB5">
+          <bounds x="495" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0414" archimateElement="el-0141" fillColor="#B9F0B9">
+          <bounds x="655" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="note-0421" textAlignment="1">
+        <bounds x="20" y="-70" width="760" height="55"/>
+        <content>Légende : jaune = bloc existant conservé · orange = bloc existant à faire évoluer · vert = bloc nouveau (cible).</content>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="V4 - Cartographie applicative cible" id="view-0422">
+      <child xsi:type="archimate:Group" id="grp-0443" name="Canaux" fillColor="#f4f4f4">
+        <bounds x="20" y="20" width="500" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0423" archimateElement="el-0142" fillColor="#FFD38A">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0424" archimateElement="el-0143" fillColor="#B9F0B9">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0425" archimateElement="el-0144" fillColor="#B9F0B9">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0444" name="Identité numérique" fillColor="#f4f4f4">
+        <bounds x="540" y="20" width="340" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0426" archimateElement="el-0151" fillColor="#FFFFB5">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0427" archimateElement="el-0161" fillColor="#FFFFB5">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0445" name="Orchestration et services IA" fillColor="#f4f4f4">
+        <bounds x="20" y="160" width="660" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0428" archimateElement="el-0145" fillColor="#B9F0B9">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0429" archimateElement="el-0146" fillColor="#B9F0B9">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0430" archimateElement="el-0147" fillColor="#FFD38A">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0431" archimateElement="el-0153" fillColor="#FFD38A">
+          <bounds x="495" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0446" name="Cœur métier CNIE" fillColor="#f4f4f4">
+        <bounds x="20" y="300" width="500" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0432" archimateElement="el-0148" fillColor="#FFFFB5">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0433" archimateElement="el-0149" fillColor="#FFD38A">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0434" archimateElement="el-0150" fillColor="#FFFFB5">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0447" name="Support et données" fillColor="#f4f4f4">
+        <bounds x="540" y="300" width="500" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0435" archimateElement="el-0154" fillColor="#B9F0B9">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0436" archimateElement="el-0155" fillColor="#B9F0B9">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0437" archimateElement="el-0156" fillColor="#B9F0B9">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0448" name="Intégration" fillColor="#f4f4f4">
+        <bounds x="20" y="440" width="180" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0438" archimateElement="el-0152" fillColor="#B9F0B9">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0449" name="Systèmes externes" fillColor="#f4f4f4">
+        <bounds x="220" y="440" width="660" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0439" archimateElement="el-0157" fillColor="#FFFFB5">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0440" archimateElement="el-0158" fillColor="#FFFFB5">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0441" archimateElement="el-0159" fillColor="#FFFFB5">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0442" archimateElement="el-0160" fillColor="#FFFFB5">
+          <bounds x="495" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="note-0450" textAlignment="1">
+        <bounds x="20" y="-70" width="760" height="55"/>
+        <content>Les flux entre applications sont décrits dans la matrice des flux du rapport (et portés par le modèle Archi). Couleurs : jaune = existant, orange = à faire évoluer, vert = nouveau.</content>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="V5 - Architecture technique cible" id="view-0451">
+      <child xsi:type="archimate:Group" id="grp-0489" name="Accès" fillColor="#f4f4f4">
+        <bounds x="20" y="20" width="340" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0452" archimateElement="el-0210">
+          <bounds x="15" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0479" source="obj-0452" target="obj-0454" archimateRelationship="rel-0229"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0453" archimateElement="el-0209">
+          <bounds x="175" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0483" source="obj-0453" target="obj-0474" archimateRelationship="rel-0233"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0484" source="obj-0453" target="obj-0477" archimateRelationship="rel-0234"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0485" source="obj-0453" target="obj-0454" archimateRelationship="rel-0235"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0490" name="Zone d'exposition (DMZ)" fillColor="#f4f4f4">
+        <bounds x="20" y="150" width="500" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0454" archimateElement="el-0185" targetConnections="conn-0479 conn-0485">
+          <bounds x="15" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0480" source="obj-0454" target="obj-0461" archimateRelationship="rel-0230"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0455" archimateElement="el-0192">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0456" archimateElement="el-0193">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0491" name="Zone sécurité" fillColor="#f4f4f4">
+        <bounds x="540" y="150" width="660" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0457" archimateElement="el-0189">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0458" archimateElement="el-0203">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0459" archimateElement="el-0204">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0460" archimateElement="el-0205">
+          <bounds x="495" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0492" name="Zone applicative" fillColor="#f4f4f4">
+        <bounds x="20" y="290" width="820" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0461" archimateElement="el-0186" targetConnections="conn-0480 conn-0486">
+          <bounds x="15" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0481" source="obj-0461" target="obj-0469" archimateRelationship="rel-0231"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0482" source="obj-0461" target="obj-0466" archimateRelationship="rel-0232"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0462" archimateElement="el-0195">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0463" archimateElement="el-0196">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0464" archimateElement="el-0197">
+          <bounds x="495" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0465" archimateElement="el-0194">
+          <bounds x="655" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0493" name="Zone IA" fillColor="#f4f4f4">
+        <bounds x="860" y="290" width="500" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0466" archimateElement="el-0188" targetConnections="conn-0482 conn-0488">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0467" archimateElement="el-0201">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0468" archimateElement="el-0202">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0494" name="Zone données" fillColor="#f4f4f4">
+        <bounds x="20" y="430" width="660" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0469" archimateElement="el-0187" targetConnections="conn-0481 conn-0487">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0470" archimateElement="el-0198">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0471" archimateElement="el-0199">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0472" archimateElement="el-0200">
+          <bounds x="495" y="43" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0495" name="Hébergement" fillColor="#f4f4f4">
+        <bounds x="700" y="430" width="180" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0473" archimateElement="el-0211">
+          <bounds x="15" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0486" source="obj-0473" target="obj-0461" archimateRelationship="rel-0236"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0487" source="obj-0473" target="obj-0469" archimateRelationship="rel-0237"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0488" source="obj-0473" target="obj-0466" archimateRelationship="rel-0238"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0496" name="Sites physiques" fillColor="#f4f4f4">
+        <bounds x="20" y="570" width="820" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0474" archimateElement="el-0190" targetConnections="conn-0483">
+          <bounds x="15" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0475" archimateElement="el-0206">
+          <bounds x="175" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0476" archimateElement="el-0207">
+          <bounds x="335" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0477" archimateElement="el-0191" targetConnections="conn-0484">
+          <bounds x="495" y="43" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0478" archimateElement="el-0208">
+          <bounds x="655" y="43" width="150" height="55"/>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="V6 - Trajectoire de migration" id="view-0497">
+      <child xsi:type="archimate:Group" id="grp-0521" name="Écarts constatés" fillColor="#f4f4f4">
+        <bounds x="20" y="20" width="500" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0498" archimateElement="el-0248">
+          <bounds x="15" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0518" source="obj-0498" target="obj-0501" archimateRelationship="rel-0259"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0499" archimateElement="el-0249">
+          <bounds x="175" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0519" source="obj-0499" target="obj-0501" archimateRelationship="rel-0260"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0500" archimateElement="el-0250">
+          <bounds x="335" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0520" source="obj-0500" target="obj-0501" archimateRelationship="rel-0261"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0522" name="Paliers" fillColor="#f4f4f4">
+        <bounds x="20" y="150" width="860" height="128"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0501" archimateElement="el-0239" targetConnections="conn-0518 conn-0519 conn-0520">
+          <bounds x="15" y="43" width="200" height="70"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0510" source="obj-0501" target="obj-0502" archimateRelationship="rel-0251"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0502" archimateElement="el-0240" targetConnections="conn-0510 conn-0513 conn-0514">
+          <bounds x="225" y="43" width="200" height="70"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0511" source="obj-0502" target="obj-0503" archimateRelationship="rel-0252"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0503" archimateElement="el-0241" targetConnections="conn-0511 conn-0515">
+          <bounds x="435" y="43" width="200" height="70"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0512" source="obj-0503" target="obj-0504" archimateRelationship="rel-0253"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0504" archimateElement="el-0242" targetConnections="conn-0512 conn-0516 conn-0517">
+          <bounds x="645" y="43" width="200" height="70"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="grp-0523" name="Chantiers" fillColor="#f4f4f4">
+        <bounds x="20" y="300" width="820" height="113"/>
+        <child xsi:type="archimate:DiagramObject" id="obj-0505" archimateElement="el-0243">
+          <bounds x="15" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0513" source="obj-0505" target="obj-0502" archimateRelationship="rel-0254"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0506" archimateElement="el-0244">
+          <bounds x="175" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0514" source="obj-0506" target="obj-0502" archimateRelationship="rel-0255"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0507" archimateElement="el-0245">
+          <bounds x="335" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0515" source="obj-0507" target="obj-0503" archimateRelationship="rel-0256"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0508" archimateElement="el-0246">
+          <bounds x="495" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0516" source="obj-0508" target="obj-0504" archimateRelationship="rel-0257"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="obj-0509" archimateElement="el-0247">
+          <bounds x="655" y="43" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn-0517" source="obj-0509" target="obj-0504" archimateRelationship="rel-0258"/>
+        </child>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

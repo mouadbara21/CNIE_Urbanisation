@@ -1,0 +1,60 @@
+<mxfile host="gen_archimate.py" type="device">
+<diagram name="V4 - Cartographie applicative cible" id="d_V4_applicatif"><mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1654" pageHeight="1169">
+<root><mxCell id="0"/><mxCell id="1" parent="0"/>
+<mxCell id="g0" value="Canaux" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="20" width="500" height="113" as="geometry"/></mxCell>
+<mxCell id="g1" value="Identité numérique" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="540" y="20" width="340" height="113" as="geometry"/></mxCell>
+<mxCell id="g2" value="Orchestration et services IA" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="160" width="660" height="113" as="geometry"/></mxCell>
+<mxCell id="g3" value="Cœur métier CNIE" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="300" width="500" height="113" as="geometry"/></mxCell>
+<mxCell id="g4" value="Support et données" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="540" y="300" width="500" height="113" as="geometry"/></mxCell>
+<mxCell id="g5" value="Intégration" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="440" width="180" height="113" as="geometry"/></mxCell>
+<mxCell id="g6" value="Systèmes externes" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="220" y="440" width="660" height="113" as="geometry"/></mxCell>
+<mxCell id="n_a01" value="APP-01 Portail citoyen CNIE&lt;br&gt;&lt;font style='font-size:8px'&gt;[à faire évoluer]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFD38A;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="35" y="63" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_a02" value="APP-02 App mobile Mon e-ID&lt;br&gt;&lt;font style='font-size:8px'&gt;[nouveau]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#B9F0B9;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="195" y="63" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_a03" value="APP-03 Assistant conversationnel&lt;br&gt;&lt;font style='font-size:8px'&gt;[nouveau]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#B9F0B9;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="355" y="63" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_a10" value="APP-10 Plateforme TCN (OpenID Connect)&lt;br&gt;&lt;font style='font-size:8px'&gt;[existant]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="555" y="63" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_x_fs" value="Fournisseurs accrédités&lt;br&gt;&lt;font style='font-size:8px'&gt;[existant]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="715" y="63" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_a04" value="APP-04 Moteur BPM (Bonita)&lt;br&gt;&lt;font style='font-size:8px'&gt;[nouveau]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#B9F0B9;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="35" y="203" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_a05" value="APP-05 Contrôle documentaire IA&lt;br&gt;&lt;font style='font-size:8px'&gt;[nouveau]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#B9F0B9;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="195" y="203" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_a06" value="APP-06 Rendez-vous et prévision&lt;br&gt;&lt;font style='font-size:8px'&gt;[à faire évoluer]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFD38A;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="355" y="203" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_a12" value="APP-12 Notifications multicanal&lt;br&gt;&lt;font style='font-size:8px'&gt;[à faire évoluer]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFD38A;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="515" y="203" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_a07" value="APP-07 Poste d'enrôlement CEDI&lt;br&gt;&lt;font style='font-size:8px'&gt;[existant]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="35" y="343" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_a08" value="APP-08 ABIS / AFIS&lt;br&gt;&lt;font style='font-size:8px'&gt;[à faire évoluer]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFD38A;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="195" y="343" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_a09" value="APP-09 Production et personnalisation&lt;br&gt;&lt;font style='font-size:8px'&gt;[existant]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="355" y="343" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_a13" value="APP-13 Entrepôt de données, BI et MLOps&lt;br&gt;&lt;font style='font-size:8px'&gt;[nouveau]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#B9F0B9;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="555" y="343" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_a14" value="APP-14 GRC / réclamations&lt;br&gt;&lt;font style='font-size:8px'&gt;[nouveau]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#B9F0B9;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="715" y="343" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_a15" value="APP-15 GED et archivage probant&lt;br&gt;&lt;font style='font-size:8px'&gt;[nouveau]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#B9F0B9;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="875" y="343" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_a11" value="APP-11 API Gateway et bus d'intégration&lt;br&gt;&lt;font style='font-size:8px'&gt;[nouveau]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#B9F0B9;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="35" y="483" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_x_ec" value="SI État civil&lt;br&gt;&lt;font style='font-size:8px'&gt;[existant]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="235" y="483" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_x_tim" value="e-Timbre (Trésorerie)&lt;br&gt;&lt;font style='font-size:8px'&gt;[existant]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="395" y="483" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_x_poste" value="Barid Al-Maghrib&lt;br&gt;&lt;font style='font-size:8px'&gt;[existant]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="555" y="483" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_x_cons" value="SI consulaire&lt;br&gt;&lt;font style='font-size:8px'&gt;[existant]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=comp;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="715" y="483" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="note" value="Les flux entre applications sont décrits dans la matrice des flux du rapport (et portés par le modèle Archi). Couleurs : jaune = existant, orange = à faire évoluer, vert = nouveau." style="text;html=1;align=left;verticalAlign=middle;fontSize=9;fontStyle=2;" vertex="1" parent="1">
+<mxGeometry x="20" y="-60" width="900" height="40" as="geometry"/></mxCell>
+</root></mxGraphModel></diagram></mxfile>

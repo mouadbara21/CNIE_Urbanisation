@@ -1,0 +1,96 @@
+<mxfile host="gen_archimate.py" type="device">
+<diagram name="V2 - Cartographie métier cible (processus et services)" id="d_V2_metier"><mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1654" pageHeight="1169">
+<root><mxCell id="0"/><mxCell id="1" parent="0"/>
+<mxCell id="g0" value="Services métier offerts" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="20" width="820" height="113" as="geometry"/></mxCell>
+<mxCell id="g1" value="Acteurs" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="150" width="820" height="113" as="geometry"/></mxCell>
+<mxCell id="g2" value="Processus principal et sous-processus" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="280" width="820" height="113" as="geometry"/></mxCell>
+<mxCell id="g3" value="Objets métier" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="410" width="820" height="113" as="geometry"/></mxCell>
+<mxCell id="n_bs_dem" value="Demande et renouvellement de CNIE" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=serv;archiType=rounded;" vertex="1" parent="1">
+<mxGeometry x="35" y="63" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_bs_rdv" value="Prise de rendez-vous" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=serv;archiType=rounded;" vertex="1" parent="1">
+<mxGeometry x="195" y="63" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_bs_suivi" value="Suivi de la demande" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=serv;archiType=rounded;" vertex="1" parent="1">
+<mxGeometry x="355" y="63" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_bs_idn" value="Identité numérique (TCN)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=serv;archiType=rounded;" vertex="1" parent="1">
+<mxGeometry x="515" y="63" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_bs_auth" value="Authentification pour les fournisseurs accrédités" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=serv;archiType=rounded;" vertex="1" parent="1">
+<mxGeometry x="675" y="63" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_ba_cit" value="Citoyen" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=actor;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="35" y="193" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_ba_cedi" value="Agent CEDI" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=actor;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="195" y="193" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_ba_ins" value="Agent instructeur&lt;br&gt;&lt;font style='font-size:8px'&gt;[nouveau]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#B9F0B9;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=actor;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="355" y="193" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_ba_cpc" value="Centre de production (CPC)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=actor;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="515" y="193" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_ba_part" value="Partenaires (Trésorerie, Poste, état civil, consulats)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=actor;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="675" y="193" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_bp_p0" value="P0 - Demande et renouvellement de la CNIE" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=proc;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="35" y="323" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_bp_sp1" value="SP1 - Pré-demande, contrôle IA des pièces, RDV&lt;br&gt;&lt;font style='font-size:8px'&gt;[nouveau]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#B9F0B9;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=proc;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="195" y="323" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_bp_sp2" value="SP2 - Enrôlement au CEDI&lt;br&gt;&lt;font style='font-size:8px'&gt;[à faire évoluer]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFD38A;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=proc;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="355" y="323" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_bp_sp3" value="SP3 - Production et personnalisation&lt;br&gt;&lt;font style='font-size:8px'&gt;[existant]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=proc;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="515" y="323" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_bp_sp4" value="SP4 - Notification, remise, activation e-ID&lt;br&gt;&lt;font style='font-size:8px'&gt;[à faire évoluer]&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFD38A;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=proc;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="675" y="323" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_bo_dem" value="Demande" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=passive;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="35" y="453" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_bo_dossier" value="Dossier de pièces" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=passive;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="195" y="453" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_bo_rdv" value="Rendez-vous" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=passive;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="355" y="453" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_bo_carte" value="Carte CNIE" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=passive;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="515" y="453" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_bo_idn" value="Identité numérique" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFFB5;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=passive;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="675" y="453" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="e_rel-0087" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;startArrow=diamondThin;startFill=1;startSize=10;endArrow=none;" edge="1" parent="1" source="n_bp_p0" target="n_bp_sp1">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0088" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;startArrow=diamondThin;startFill=1;startSize=10;endArrow=none;" edge="1" parent="1" source="n_bp_p0" target="n_bp_sp2">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0089" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;startArrow=diamondThin;startFill=1;startSize=10;endArrow=none;" edge="1" parent="1" source="n_bp_p0" target="n_bp_sp3">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0090" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;startArrow=diamondThin;startFill=1;startSize=10;endArrow=none;" edge="1" parent="1" source="n_bp_p0" target="n_bp_sp4">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0091" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="n_bp_sp1" target="n_bp_sp2">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0092" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="n_bp_sp2" target="n_bp_sp3">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0093" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="n_bp_sp3" target="n_bp_sp4">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0094" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=block;endFill=0;dashed=1;dashPattern=2 2;" edge="1" parent="1" source="n_bp_p0" target="n_bs_dem">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0095" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=block;endFill=0;dashed=1;dashPattern=2 2;" edge="1" parent="1" source="n_bp_sp1" target="n_bs_rdv">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0096" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=block;endFill=0;dashed=1;dashPattern=2 2;" edge="1" parent="1" source="n_bp_sp4" target="n_bs_suivi">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0097" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=block;endFill=0;dashed=1;dashPattern=2 2;" edge="1" parent="1" source="n_bp_sp4" target="n_bs_idn">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0098" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;startArrow=oval;startFill=1;endArrow=block;endFill=1;" edge="1" parent="1" source="n_ba_cit" target="n_bp_sp1">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0099" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;startArrow=oval;startFill=1;endArrow=block;endFill=1;" edge="1" parent="1" source="n_ba_cedi" target="n_bp_sp2">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0100" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;startArrow=oval;startFill=1;endArrow=block;endFill=1;" edge="1" parent="1" source="n_ba_ins" target="n_bp_sp1">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0101" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;startArrow=oval;startFill=1;endArrow=block;endFill=1;" edge="1" parent="1" source="n_ba_cpc" target="n_bp_sp3">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0102" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;startArrow=oval;startFill=1;endArrow=block;endFill=1;" edge="1" parent="1" source="n_ba_part" target="n_bp_sp4">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0103" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;dashed=1;dashPattern=1 3;" edge="1" parent="1" source="n_bp_sp1" target="n_bo_dem">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0104" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;dashed=1;dashPattern=1 3;" edge="1" parent="1" source="n_bp_sp1" target="n_bo_dossier">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;dashed=1;dashPattern=1 3;" edge="1" parent="1" source="n_bp_sp1" target="n_bo_rdv">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0106" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;dashed=1;dashPattern=1 3;" edge="1" parent="1" source="n_bp_sp3" target="n_bo_carte">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0107" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;dashed=1;dashPattern=1 3;" edge="1" parent="1" source="n_bp_sp4" target="n_bo_idn">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="note" value="Couleurs : jaune = existant, orange = à faire évoluer, vert = nouveau." style="text;html=1;align=left;verticalAlign=middle;fontSize=9;fontStyle=2;" vertex="1" parent="1">
+<mxGeometry x="20" y="-60" width="900" height="40" as="geometry"/></mxCell>
+</root></mxGraphModel></diagram></mxfile>

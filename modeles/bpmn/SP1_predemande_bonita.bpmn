@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="defs_SP1_predemande" targetNamespace="http://cnie.ma/urbanisation" exporter="gen_bpmn.py" exporterVersion="1.0">
+  <bpmn:collaboration id="collab_SP1_predemande">
+    <bpmn:participant id="pool_SP1_predemande" name="DGSN - SP1 Pré-demande CNIE (prototype Bonita)" processRef="SP1_predemande" />
+  </bpmn:collaboration>
+  <bpmn:process id="SP1_predemande" name="SP1 - Pré-demande en ligne, contrôle IA des pièces et prise de RDV" isExecutable="true">
+    <bpmn:laneSet id="laneset_SP1_predemande">
+      <bpmn:lane id="lane_SP1_predemande_0" name="Citoyen">
+        <bpmn:flowNodeRef>s1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t6</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t7</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t10</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>e1</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="lane_SP1_predemande_1" name="Services automatiques">
+        <bpmn:flowNodeRef>t3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>g1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t8</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t9</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="lane_SP1_predemande_2" name="Agent instructeur">
+        <bpmn:flowNodeRef>t5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>g2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>e2</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="s1" name="Nouvelle demande">
+      <bpmn:outgoing>flow_1</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="t1" name="Saisir la pré-demande (type, identité, état civil, adresse, contact)">
+      <bpmn:incoming>flow_1</bpmn:incoming>
+      <bpmn:outgoing>flow_2</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="t2" name="Téléverser les pièces (acte, résidence, photo)">
+      <bpmn:incoming>flow_2</bpmn:incoming>
+      <bpmn:outgoing>flow_3</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="t3" name="[IA] Contrôle IA des pièces (OCR + cohérence + photo)">
+      <bpmn:incoming>flow_3</bpmn:incoming>
+      <bpmn:incoming>flow_6</bpmn:incoming>
+      <bpmn:outgoing>flow_4</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="g1" name="Score de conformité ?">
+      <bpmn:incoming>flow_4</bpmn:incoming>
+      <bpmn:outgoing>flow_5</bpmn:outgoing>
+      <bpmn:outgoing>flow_7</bpmn:outgoing>
+      <bpmn:outgoing>flow_12</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="t4" name="Corriger les anomalies signalées">
+      <bpmn:incoming>flow_5</bpmn:incoming>
+      <bpmn:incoming>flow_9</bpmn:incoming>
+      <bpmn:outgoing>flow_6</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="t5" name="Instruire manuellement le dossier">
+      <bpmn:incoming>flow_7</bpmn:incoming>
+      <bpmn:outgoing>flow_8</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="g2" name="Décision ?">
+      <bpmn:incoming>flow_8</bpmn:incoming>
+      <bpmn:outgoing>flow_9</bpmn:outgoing>
+      <bpmn:outgoing>flow_10</bpmn:outgoing>
+      <bpmn:outgoing>flow_11</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="e2" name="Demande rejetée">
+      <bpmn:incoming>flow_10</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:userTask id="t6" name="Choisir le centre et le créneau recommandé">
+      <bpmn:incoming>flow_11</bpmn:incoming>
+      <bpmn:incoming>flow_12</bpmn:incoming>
+      <bpmn:outgoing>flow_13</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="t7" name="Régler les frais (code e-timbre)">
+      <bpmn:incoming>flow_13</bpmn:incoming>
+      <bpmn:outgoing>flow_14</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="t8" name="Vérifier l'e-timbre et réserver le créneau">
+      <bpmn:incoming>flow_14</bpmn:incoming>
+      <bpmn:outgoing>flow_15</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="t9" name="Générer le récépissé, le QR code et notifier">
+      <bpmn:incoming>flow_15</bpmn:incoming>
+      <bpmn:outgoing>flow_16</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:userTask id="t10" name="Consulter la confirmation et le récépissé">
+      <bpmn:incoming>flow_16</bpmn:incoming>
+      <bpmn:outgoing>flow_17</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="e1" name="Pré-demande confirmée">
+      <bpmn:incoming>flow_17</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="flow_1" sourceRef="s1" targetRef="t1" />
+    <bpmn:sequenceFlow id="flow_2" sourceRef="t1" targetRef="t2" />
+    <bpmn:sequenceFlow id="flow_3" sourceRef="t2" targetRef="t3" />
+    <bpmn:sequenceFlow id="flow_4" sourceRef="t3" targetRef="g1" />
+    <bpmn:sequenceFlow id="flow_5" name="&lt; 60 % : non conforme" sourceRef="g1" targetRef="t4" />
+    <bpmn:sequenceFlow id="flow_6" sourceRef="t4" targetRef="t3" />
+    <bpmn:sequenceFlow id="flow_7" name="60-85 % : doute" sourceRef="g1" targetRef="t5" />
+    <bpmn:sequenceFlow id="flow_8" sourceRef="t5" targetRef="g2" />
+    <bpmn:sequenceFlow id="flow_9" name="à corriger" sourceRef="g2" targetRef="t4" />
+    <bpmn:sequenceFlow id="flow_10" name="rejet" sourceRef="g2" targetRef="e2" />
+    <bpmn:sequenceFlow id="flow_11" name="validé" sourceRef="g2" targetRef="t6" />
+    <bpmn:sequenceFlow id="flow_12" name="&gt; 85 % : conforme" sourceRef="g1" targetRef="t6" />
+    <bpmn:sequenceFlow id="flow_13" sourceRef="t6" targetRef="t7" />
+    <bpmn:sequenceFlow id="flow_14" sourceRef="t7" targetRef="t8" />
+    <bpmn:sequenceFlow id="flow_15" sourceRef="t8" targetRef="t9" />
+    <bpmn:sequenceFlow id="flow_16" sourceRef="t9" targetRef="t10" />
+    <bpmn:sequenceFlow id="flow_17" sourceRef="t10" targetRef="e1" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="diag_SP1_predemande">
+    <bpmndi:BPMNPlane id="plane_SP1_predemande" bpmnElement="collab_SP1_predemande">
+      <bpmndi:BPMNShape id="shape_pool_SP1_predemande" bpmnElement="pool_SP1_predemande" isHorizontal="true">
+        <dc:Bounds x="0" y="0" width="2427" height="540" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_lane_SP1_predemande_0" bpmnElement="lane_SP1_predemande_0" isHorizontal="true">
+        <dc:Bounds x="36" y="0" width="2391" height="180" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_lane_SP1_predemande_1" bpmnElement="lane_SP1_predemande_1" isHorizontal="true">
+        <dc:Bounds x="36" y="180" width="2391" height="180" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_lane_SP1_predemande_2" bpmnElement="lane_SP1_predemande_2" isHorizontal="true">
+        <dc:Bounds x="36" y="360" width="2391" height="180" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_s1" bpmnElement="s1">
+        <dc:Bounds x="159" y="72" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_t1" bpmnElement="t1">
+        <dc:Bounds x="287" y="55" width="130" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_t2" bpmnElement="t2">
+        <dc:Bounds x="462" y="55" width="130" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_t3" bpmnElement="t3">
+        <dc:Bounds x="637" y="235" width="130" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_g1" bpmnElement="g1" isMarkerVisible="true">
+        <dc:Bounds x="852" y="245" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_t4" bpmnElement="t4">
+        <dc:Bounds x="987" y="55" width="130" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_t5" bpmnElement="t5">
+        <dc:Bounds x="987" y="415" width="130" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_g2" bpmnElement="g2" isMarkerVisible="true">
+        <dc:Bounds x="1202" y="425" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_e2" bpmnElement="e2">
+        <dc:Bounds x="1384" y="432" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_t6" bpmnElement="t6">
+        <dc:Bounds x="1337" y="55" width="130" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_t7" bpmnElement="t7">
+        <dc:Bounds x="1512" y="55" width="130" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_t8" bpmnElement="t8">
+        <dc:Bounds x="1687" y="235" width="130" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_t9" bpmnElement="t9">
+        <dc:Bounds x="1862" y="235" width="130" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_t10" bpmnElement="t10">
+        <dc:Bounds x="2037" y="55" width="130" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_e1" bpmnElement="e1">
+        <dc:Bounds x="2259" y="72" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="edge_flow_1" bpmnElement="flow_1">
+        <di:waypoint x="195" y="90" />
+        <di:waypoint x="287" y="90" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_2" bpmnElement="flow_2">
+        <di:waypoint x="417" y="90" />
+        <di:waypoint x="462" y="90" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_3" bpmnElement="flow_3">
+        <di:waypoint x="592" y="90" />
+        <di:waypoint x="614" y="90" />
+        <di:waypoint x="614" y="270" />
+        <di:waypoint x="637" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_4" bpmnElement="flow_4">
+        <di:waypoint x="767" y="270" />
+        <di:waypoint x="852" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_5" bpmnElement="flow_5">
+        <di:waypoint x="902" y="270" />
+        <di:waypoint x="944" y="270" />
+        <di:waypoint x="944" y="90" />
+        <di:waypoint x="987" y="90" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_6" bpmnElement="flow_6">
+        <di:waypoint x="1052" y="125" />
+        <di:waypoint x="1052" y="330" />
+        <di:waypoint x="702" y="330" />
+        <di:waypoint x="702" y="305" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_7" bpmnElement="flow_7">
+        <di:waypoint x="902" y="270" />
+        <di:waypoint x="944" y="270" />
+        <di:waypoint x="944" y="450" />
+        <di:waypoint x="987" y="450" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_8" bpmnElement="flow_8">
+        <di:waypoint x="1117" y="450" />
+        <di:waypoint x="1202" y="450" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_9" bpmnElement="flow_9">
+        <di:waypoint x="1227" y="475" />
+        <di:waypoint x="1227" y="500" />
+        <di:waypoint x="1052" y="500" />
+        <di:waypoint x="1052" y="125" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_10" bpmnElement="flow_10">
+        <di:waypoint x="1252" y="450" />
+        <di:waypoint x="1384" y="450" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_11" bpmnElement="flow_11">
+        <di:waypoint x="1252" y="450" />
+        <di:waypoint x="1294" y="450" />
+        <di:waypoint x="1294" y="90" />
+        <di:waypoint x="1337" y="90" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_12" bpmnElement="flow_12">
+        <di:waypoint x="902" y="270" />
+        <di:waypoint x="1120" y="270" />
+        <di:waypoint x="1120" y="90" />
+        <di:waypoint x="1337" y="90" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_13" bpmnElement="flow_13">
+        <di:waypoint x="1467" y="90" />
+        <di:waypoint x="1512" y="90" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_14" bpmnElement="flow_14">
+        <di:waypoint x="1642" y="90" />
+        <di:waypoint x="1664" y="90" />
+        <di:waypoint x="1664" y="270" />
+        <di:waypoint x="1687" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_15" bpmnElement="flow_15">
+        <di:waypoint x="1817" y="270" />
+        <di:waypoint x="1862" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_16" bpmnElement="flow_16">
+        <di:waypoint x="1992" y="270" />
+        <di:waypoint x="2014" y="270" />
+        <di:waypoint x="2014" y="90" />
+        <di:waypoint x="2037" y="90" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_flow_17" bpmnElement="flow_17">
+        <di:waypoint x="2167" y="90" />
+        <di:waypoint x="2259" y="90" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

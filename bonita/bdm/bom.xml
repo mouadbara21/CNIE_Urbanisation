@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel modelVersion="1.0" productVersion="2024.1">
+  <businessObjects>
+    <businessObject qualifiedName="com.dgsn.cnie.model.DemandeCNIE">
+      <description>Demande d'obtention, de renouvellement ou de duplicata de la CNIE</description>
+      <fields>
+        <field type="STRING" length="20" name="numeroDemande" nullable="true" collection="false"/>
+        <field type="STRING" length="20" name="typeDemande" nullable="false" collection="false"/>
+        <field type="STRING" length="80" name="nomLatin" nullable="false" collection="false"/>
+        <field type="STRING" length="80" name="prenomLatin" nullable="false" collection="false"/>
+        <field type="STRING" length="80" name="nomArabe" nullable="true" collection="false"/>
+        <field type="STRING" length="80" name="prenomArabe" nullable="true" collection="false"/>
+        <field type="LOCALDATE" name="dateNaissance" nullable="false" collection="false"/>
+        <field type="STRING" length="80" name="lieuNaissance" nullable="true" collection="false"/>
+        <field type="STRING" length="20" name="numeroActeNaissance" nullable="true" collection="false"/>
+        <field type="INTEGER" name="anneeActe" nullable="true" collection="false"/>
+        <field type="STRING" length="80" name="nomPere" nullable="true" collection="false"/>
+        <field type="STRING" length="80" name="nomMere" nullable="true" collection="false"/>
+        <field type="STRING" length="255" name="adresse" nullable="true" collection="false"/>
+        <field type="STRING" length="80" name="ville" nullable="true" collection="false"/>
+        <field type="STRING" length="120" name="email" nullable="true" collection="false"/>
+        <field type="STRING" length="20" name="telephone" nullable="true" collection="false"/>
+        <field type="STRING" length="120" name="contactUrgence" nullable="true" collection="false"/>
+        <field type="STRING" length="16" name="codeETimbre" nullable="true" collection="false"/>
+        <field type="STRING" length="20" name="statut" nullable="true" collection="false"/>
+        <field type="INTEGER" name="scoreConformite" nullable="true" collection="false"/>
+        <field type="TEXT" name="anomalies" nullable="true" collection="false"/>
+        <field type="LOCALDATETIME" name="dateCreation" nullable="true" collection="false"/>
+        <relationField type="COMPOSITION" fetchType="EAGER" name="pieces" nullable="true" collection="true" reference="com.dgsn.cnie.model.PieceJustificative"/>
+        <relationField type="COMPOSITION" fetchType="EAGER" name="rendezVous" nullable="true" collection="false" reference="com.dgsn.cnie.model.RendezVous"/>
+      </fields>
+      <uniqueConstraints/>
+      <queries>
+        <query name="findByStatut" content="SELECT d FROM DemandeCNIE d WHERE d.statut = :statut ORDER BY d.dateCreation DESC" returnType="java.util.List">
+          <queryParameters><queryParameter name="statut" className="java.lang.String"/></queryParameters>
+        </query>
+      </queries>
+      <indexes/>
+    </businessObject>
+    <businessObject qualifiedName="com.dgsn.cnie.model.PieceJustificative">
+      <fields>
+        <field type="STRING" length="30" name="typePiece" nullable="false" collection="false"/>
+        <field type="STRING" length="255" name="nomFichier" nullable="true" collection="false"/>
+        <field type="STRING" length="64" name="documentId" nullable="true" collection="false"/>
+        <field type="STRING" length="20" name="verdictIA" nullable="true" collection="false"/>
+        <field type="STRING" length="255" name="commentaireIA" nullable="true" collection="false"/>
+      </fields>
+      <uniqueConstraints/><queries/><indexes/>
+    </businessObject>
+    <businessObject qualifiedName="com.dgsn.cnie.model.RendezVous">
+      <fields>
+        <field type="STRING" length="10" name="codeCEDI" nullable="false" collection="false"/>
+        <field type="STRING" length="80" name="nomCEDI" nullable="true" collection="false"/>
+        <field type="LOCALDATE" name="dateRdv" nullable="false" collection="false"/>
+        <field type="STRING" length="15" name="creneau" nullable="false" collection="false"/>
+        <field type="BOOLEAN" name="recommandeIA" nullable="true" collection="false"/>
+        <field type="STRING" length="255" name="codeQR" nullable="true" collection="false"/>
+      </fields>
+      <uniqueConstraints/><queries/><indexes/>
+    </businessObject>
+    <businessObject qualifiedName="com.dgsn.cnie.model.Centre">
+      <description>Référentiel des centres d'enregistrement (CEDI) avec charge prévue par l'IA</description>
+      <fields>
+        <field type="STRING" length="10" name="codeCEDI" nullable="false" collection="false"/>
+        <field type="STRING" length="80" name="nom" nullable="false" collection="false"/>
+        <field type="STRING" length="80" name="ville" nullable="true" collection="false"/>
+        <field type="INTEGER" name="capaciteJour" nullable="true" collection="false"/>
+        <field type="INTEGER" name="chargePrevue" nullable="true" collection="false"/>
+      </fields>
+      <uniqueConstraints>
+        <uniqueConstraint name="UK_CODECEDI"><fieldNames><fieldName>codeCEDI</fieldName></fieldNames></uniqueConstraint>
+      </uniqueConstraints>
+      <queries/><indexes/>
+    </businessObject>
+  </businessObjects>
+</businessObjectModel>

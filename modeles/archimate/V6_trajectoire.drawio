@@ -1,0 +1,56 @@
+<mxfile host="gen_archimate.py" type="device">
+<diagram name="V6 - Trajectoire de migration" id="d_V6_trajectoire"><mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1654" pageHeight="1169">
+<root><mxCell id="0"/><mxCell id="1" parent="0"/>
+<mxCell id="g0" value="Écarts constatés" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="20" width="500" height="113" as="geometry"/></mxCell>
+<mxCell id="g1" value="Paliers" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="150" width="860" height="128" as="geometry"/></mxCell>
+<mxCell id="g2" value="Chantiers" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 3;fillColor=#f7f7f7;strokeColor=#8a8a8a;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+<mxGeometry x="20" y="300" width="820" height="113" as="geometry"/></mxCell>
+<mxCell id="n_gap1" value="Contrôle documentaire manuel" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFE0E0;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=gap;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="35" y="63" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_gap2" value="Canaux en silos" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFE0E0;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=gap;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="195" y="63" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_gap3" value="Absence de pilotage prédictif" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFE0E0;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=gap;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="355" y="63" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_pl0" value="Palier 0 - Existant (2026)" style="html=1;whiteSpace=wrap;fillColor=#FFE0E0;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=plateau;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="35" y="193" width="200" height="70" as="geometry"/></mxCell>
+<mxCell id="n_pl1" value="Palier 1 - Socle (2027) : BPM, API Gateway, contrôle IA des pièces, e-timbre intégré" style="html=1;whiteSpace=wrap;fillColor=#FFE0E0;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=plateau;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="245" y="193" width="200" height="70" as="geometry"/></mxCell>
+<mxCell id="n_pl2" value="Palier 2 - Étendu (2028) : app Mon e-ID, assistant IA, prévision d'affluence, livraison à domicile" style="html=1;whiteSpace=wrap;fillColor=#FFE0E0;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=plateau;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="455" y="193" width="200" height="70" as="geometry"/></mxCell>
+<mxCell id="n_pl3" value="Palier 3 - Cible (2030) : renouvellement 100 % en ligne, pilotage prédictif, MLOps" style="html=1;whiteSpace=wrap;fillColor=#FFE0E0;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=plateau;archiType=square;" vertex="1" parent="1">
+<mxGeometry x="665" y="193" width="200" height="70" as="geometry"/></mxCell>
+<mxCell id="n_wp1" value="WP1 - Socle d'intégration et BPM" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFE0E0;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=workPkg;archiType=rounded;" vertex="1" parent="1">
+<mxGeometry x="35" y="343" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_wp2" value="WP2 - Services IA documentaires et biométriques" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFE0E0;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=workPkg;archiType=rounded;" vertex="1" parent="1">
+<mxGeometry x="195" y="343" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_wp3" value="WP3 - Canaux citoyens (portail, mobile, assistant)" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFE0E0;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=workPkg;archiType=rounded;" vertex="1" parent="1">
+<mxGeometry x="355" y="343" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_wp4" value="WP4 - Données, BI et MLOps" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFE0E0;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=workPkg;archiType=rounded;" vertex="1" parent="1">
+<mxGeometry x="515" y="343" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="n_wp5" value="WP5 - Conduite du changement et gouvernance" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFE0E0;strokeColor=#5a5a5a;fontSize=10;shape=mxgraph.archimate3.application;appType=workPkg;archiType=rounded;" vertex="1" parent="1">
+<mxGeometry x="675" y="343" width="150" height="55" as="geometry"/></mxCell>
+<mxCell id="e_rel-0251" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="n_pl0" target="n_pl1">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0252" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="n_pl1" target="n_pl2">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0253" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="n_pl2" target="n_pl3">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0254" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=none;" edge="1" parent="1" source="n_wp1" target="n_pl1">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0255" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=none;" edge="1" parent="1" source="n_wp2" target="n_pl1">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0256" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=none;" edge="1" parent="1" source="n_wp3" target="n_pl2">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0257" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=none;" edge="1" parent="1" source="n_wp4" target="n_pl3">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0258" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=none;" edge="1" parent="1" source="n_wp5" target="n_pl3">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0259" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=none;" edge="1" parent="1" source="n_gap1" target="n_pl0">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0260" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=none;" edge="1" parent="1" source="n_gap2" target="n_pl0">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e_rel-0261" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;fontSize=9;labelBackgroundColor=#ffffff;endArrow=none;" edge="1" parent="1" source="n_gap3" target="n_pl0">
+<mxGeometry relative="1" as="geometry"/></mxCell>
+</root></mxGraphModel></diagram></mxfile>

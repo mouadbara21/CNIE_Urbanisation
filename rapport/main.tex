@@ -1,0 +1,59 @@
+\documentclass[conference,a4paper]{IEEEtran}
+% ------------------------------------------------------------------
+% Urbanisation du SI du portail CNIE (DGSN) — rapport IEEE, français
+% Compilation : latexmk -pdf main.tex   (MiKTeX, biber)
+% ------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{rotating}        % sidewaysfigure pour les BPMN
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage[backend=biber,style=ieee,maxbibnames=3,sorting=none]{biblatex}
+\addbibresource{biblio.bib}
+\graphicspath{{figures/}}
+\setlist{nosep}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=blue!60!black,urlcolor=blue!60!black}
+\definecolor{existant}{HTML}{E8D77A}
+\definecolor{evoluer}{HTML}{F2B65C}
+\definecolor{nouveau}{HTML}{7FCB8F}
+\newcommand{\tagE}{\textcolor{existant}{\rule{0.9em}{0.9em}}}
+\newcommand{\tagV}{\textcolor{evoluer}{\rule{0.9em}{0.9em}}}
+\newcommand{\tagN}{\textcolor{nouveau}{\rule{0.9em}{0.9em}}}
+\frenchbsetup{StandardLists=true}
+
+\begin{document}
+
+\title{Urbanisation du système d'information du portail de la Carte Nationale d'Identité Électronique~: cartographie de l'existant et architecture cible intégrant l'intelligence artificielle}
+
+\author{%
+\IEEEauthorblockN{Mouad, Najib, Hafsa, Zineb}
+\IEEEauthorblockA{Cabinet d'urbanisation (projet académique) --- E-services dans l'administration marocaine, sujet~2\\
+Novembre 2026}}
+
+\maketitle
+
+\input{sections/00-resume}
+\input{sections/01-introduction}
+\input{sections/02-methodologie}
+\input{sections/03-existant}
+\input{sections/04-strategie}
+\input{sections/05-metier}
+\input{sections/06-fonctionnel}
+\input{sections/07-applicatif}
+\input{sections/08-technique}
+\input{sections/09-trajectoire}
+\input{sections/10-conclusion}
+
+\printbibliography
+
+\end{document}
